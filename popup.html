@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        width: 220px;
+        padding: 10px;
+      }
+      .form-group {
+        margin-bottom: 10px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        width: calc(100% - 10px);
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-group">
+      <label>源网址:</label>
+      <input
+        type="text"
+        id="sourceUrl"
+        value="https://172.29.229.234:30016/"
+        placeholder="例如: https://example.com" />
+    </div>
+    <div class="form-group">
+      <label>目标网址:</label>
+      <input
+        type="text"
+        id="targetUrl"
+        value="http://localhost:8099/"
+        placeholder="例如: https://target.com" />
+    </div>
+    <div class="form-group">
+      <label>Cookie Key:</label>
+      <input
+        type="text"
+        id="cookieKey"
+        value="skybox-gateway-default"
+        placeholder="输入要传输的 Cookie 名称" />
+    </div>
+    <button id="transfer">传输 Cookie</button>
+    <br />
+    <span id="transferStatus"></span>
+    <script src="popup.js"></script>
+  </body>
+</html>
