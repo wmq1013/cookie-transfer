@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       cookieKey: cookieKey
     }, function (response) {
       const transferStatusDom = document.getElementById('transferStatus');
-      transferStatusDom.textContent = response?.success ? 'Cookie 传输成功！' : 'Cookie 传输失败!';
+      transferStatusDom.textContent = response?.message || (response?.success ? 'Cookie 传输成功！' : 'Cookie 传输失败!');
     });
   });
 });
