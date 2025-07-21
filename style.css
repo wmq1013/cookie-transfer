@@ -76,6 +76,11 @@
   transform: scale(1);
   transition: all 0.5s;
 }
+
+.input-container input[type='text'] {
+  font-size: 12px;
+}
+
 /* 按钮样式 */
 .button {
   height: 32px;
